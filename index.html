@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conserve and Sustainably Use Oceans</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Conserve and Sustainably Use Oceans</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#importance">Importance</a></li>
+                <li><a href="#how-to-help">How to Help</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome</h2>
+        <p>Join us in our mission to conserve and sustainably use the oceans, seas, and marine resources for sustainable development.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <img src="images.jpg" alt="Ocean Conservation">
+            <div class="about-text">
+                <p>We are a non-profit organization dedicated to the preservation and sustainable use of oceans, seas, and marine resources. Our mission is to raise awareness about the importance of marine conservation and to inspire action that protects marine ecosystems for future generations.</p>
+                <p>Since our founding in 2010, we have been involved in numerous projects and campaigns aimed at reducing marine pollution, promoting sustainable fishing practices, and supporting marine protected areas. Our team consists of marine biologists, environmental activists, and volunteers who are passionate about making a positive impact on our oceans.</p>
+                <p>We believe that everyone has a role to play in marine conservation. Through education, advocacy, and community engagement, we strive to empower individuals and communities to take action for a healthier and more sustainable marine environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="importance">
+        <h2>The Importance of Ocean Conservation</h2>
+        <div class="importance-content">
+            <img src="1696154179624.jpg" alt="Ocean Conservation">
+            <p>Oceans are crucial to life on Earth, covering 70% of the planet and regulating the climate.</p>
+            <h3 class="collapsible">Climate Regulation</h3>
+            <div class="content">
+                <p>Oceans absorb CO2 and distribute heat globally, influencing weather patterns.</p>
+            </div>
+            <h3 class="collapsible">Biodiversity</h3>
+            <div class="content">
+                <p>Home to diverse marine life, oceans maintain balanced ecosystems.</p>
+            </div>
+            <h3 class="collapsible">Economic Benefits</h3>
+            <div class="content">
+                <p>Oceans support fishing, tourism, and trade, crucial for many livelihoods.</p>
+            </div>
+            <h3 class="collapsible">Human Health</h3>
+            <div class="content">
+                <p>Oceans provide food, medicine, and recreational benefits for well-being.</p>
+            </div>
+            <h3 class="collapsible">Call to Action</h3>
+            <div class="content">
+                <p>Protect our oceans from pollution and overfishing for future generations.</p>
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <section id="how-to-help">
+        <h2>How to Help</h2>
+        <ul>
+            <li>Reduce plastic use</li>
+            <li>Support sustainable seafood</li>
+            <li>Participate in beach cleanups</li>
+            <li>Spread awareness</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch with us to learn more about our initiatives and how you can get involved.</p>
+        <form action="#">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Conserve Oceans. All rights reserved.</p>
+    </footer>
+</body>
+<script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "f89639fd-fd95-4cee-baaa-2b030aa80b7f", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "c7644488-3840-496f-a678-80d74de0fd0c", // The ID of your service instance.
+      onLoad: async (instance) => { await instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    });
+    </script>
+    
+</html>
